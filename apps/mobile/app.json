@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "Troc",
+    "slug": "troc",
+    "version": "1.0.0",
+    "scheme": "troc",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6C63FF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.troc.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Troc a besoin d'accéder à votre caméra pour prendre des photos de vos articles.",
+        "NSPhotoLibraryUsageDescription": "Troc a besoin d'accéder à votre galerie pour ajouter des photos à vos annonces.",
+        "NSLocationWhenInUseUsageDescription": "Troc utilise votre position pour afficher les annonces proches de vous.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Troc utilise votre position pour afficher les annonces proches de vous."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6C63FF"
+      },
+      "package": "com.troc.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Troc a besoin d'accéder à votre caméra."
+        }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Troc a besoin d'accéder à votre caméra pour scanner les QR codes."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Troc utilise votre position pour les annonces."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#6C63FF",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Troc accède à vos photos pour illustrer vos annonces."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
