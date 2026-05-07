@@ -139,7 +139,7 @@ export default function QRExchangeScreen() {
         }
         Alert.alert(
           '🎉 Échange validé !',
-          'Félicitations ! N'oubliez pas de laisser un avis.',
+          "Félicitations ! N'oubliez pas de laisser un avis.",
           [
             {
               text: 'Laisser un avis',
