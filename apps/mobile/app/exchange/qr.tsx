@@ -65,7 +65,7 @@ export default function QRExchangeScreen() {
       .single()
 
     if (!conv?.match_id) {
-      Alert.alert('Erreur', 'Impossible de créer l'échange : match introuvable.')
+      Alert.alert('Erreur', "Impossible de créer l'échange : match introuvable.")
       router.back()
       return
     }
@@ -188,7 +188,7 @@ export default function QRExchangeScreen() {
 
     setExchange(ex)
     setMode('show')
-    Alert.alert('Code validé !', 'Confirmez maintenant l'échange.')
+    Alert.alert('Code validé !', "Confirmez maintenant l'échange.")
   }
 
   if (loading) {
