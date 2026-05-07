@@ -8,7 +8,7 @@ import { useChatStore } from '@/stores/chat'
 import { useAuthStore } from '@/stores/auth'
 import { Avatar } from '@/components/Avatar'
 import { COLORS } from '@/lib/constants'
-import type { Conversation } from '@troc/types'
+import type { Conversation } from '@/types'
 
 export default function MessagesScreen() {
   const router = useRouter()

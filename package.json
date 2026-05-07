@@ -1,20 +1,7 @@
 {
   "name": "troc",
   "private": true,
-  "workspaces": ["apps/*", "packages/*"],
-  "scripts": {
-    "dev:mobile": "turbo run dev --filter=mobile",
-    "dev:admin": "turbo run dev --filter=admin",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "type-check": "turbo run type-check"
-  },
-  "devDependencies": {
-    "turbo": "^2.0.0",
-    "typescript": "^5.4.0"
-  },
   "engines": {
     "node": ">=18"
-  },
-  "packageManager": "yarn@1.22.22"
+  }
 }

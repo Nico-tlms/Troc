@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { RealtimeChannel } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase'
-import type { Conversation, Message } from '@troc/types'
+import type { Conversation, Message } from '@/types'
 
 interface ChatState {
   conversations: Conversation[]

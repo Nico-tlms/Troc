@@ -8,7 +8,7 @@ import {
   ViewStyle,
 } from 'react-native'
 import { COLORS } from '@/lib/constants'
-import type { Match, ChainMatch } from '@troc/types'
+import type { Match, ChainMatch } from '@/types'
 import { Badge } from './Badge'
 
 interface MatchCardProps {

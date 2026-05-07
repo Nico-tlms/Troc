@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import { COLORS, CONDITION_COLORS } from '@/lib/constants'
-import { CONDITION_LABELS, ItemCondition, CONDITION_ORDER } from '@troc/types'
+import { CONDITION_LABELS, ItemCondition, CONDITION_ORDER } from '@/types'
 
 interface ConditionPickerProps {
   value?: ItemCondition | null

@@ -8,7 +8,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router'
 import { supabase } from '@/lib/supabase'
 import { useAuthStore } from '@/stores/auth'
 import { COLORS } from '@/lib/constants'
-import type { Exchange } from '@troc/types'
+import type { Exchange } from '@/types'
 
 // QR display uses raw code string (react-native-qrcode-svg can be added for production)
 

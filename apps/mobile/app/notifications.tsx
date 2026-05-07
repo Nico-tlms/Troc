@@ -7,7 +7,7 @@ import { useRouter } from 'expo-router'
 import { supabase } from '@/lib/supabase'
 import { useAuthStore } from '@/stores/auth'
 import { COLORS, NOTIFICATION_ICONS } from '@/lib/constants'
-import type { Notification } from '@troc/types'
+import type { Notification } from '@/types'
 
 export default function NotificationsScreen() {
   const router = useRouter()

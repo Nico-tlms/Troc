@@ -12,8 +12,8 @@ import { COLORS } from '@/lib/constants'
 import { Avatar } from '@/components/Avatar'
 import { Badge } from '@/components/Badge'
 import { StarRating } from '@/components/StarRating'
-import { CONDITION_LABELS } from '@troc/types'
-import type { Match, ChainMatch } from '@troc/types'
+import { CONDITION_LABELS } from '@/types'
+import type { Match, ChainMatch } from '@/types'
 
 export default function MatchDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>()

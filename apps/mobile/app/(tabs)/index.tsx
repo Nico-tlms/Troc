@@ -10,7 +10,7 @@ import { useMatchesStore } from '@/stores/matches'
 import { useListingsStore } from '@/stores/listings'
 import { MatchCard } from '@/components/MatchCard'
 import { COLORS } from '@/lib/constants'
-import type { Match, ChainMatch } from '@troc/types'
+import type { Match, ChainMatch } from '@/types'
 
 export default function HomeScreen() {
   const router = useRouter()

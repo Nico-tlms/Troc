@@ -11,8 +11,8 @@ import { COLORS, STATUS_LABELS, STATUS_COLORS } from '@/lib/constants'
 import { Avatar } from '@/components/Avatar'
 import { StarRating } from '@/components/StarRating'
 import { Badge } from '@/components/Badge'
-import { CONDITION_LABELS } from '@troc/types'
-import type { Listing } from '@troc/types'
+import { CONDITION_LABELS } from '@/types'
+import type { Listing } from '@/types'
 
 export default function ListingDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>()

@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { supabase } from '@/lib/supabase'
-import type { Listing, CreateListingPayload } from '@troc/types'
+import type { Listing, CreateListingPayload } from '@/types'
 
 interface ListingsState {
   myListings: Listing[]

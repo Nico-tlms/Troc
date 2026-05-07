@@ -9,7 +9,7 @@ import { useChatStore } from '@/stores/chat'
 import { useAuthStore } from '@/stores/auth'
 import { supabase } from '@/lib/supabase'
 import { COLORS } from '@/lib/constants'
-import type { Message } from '@troc/types'
+import type { Message } from '@/types'
 
 export default function ChatScreen() {
   const { id } = useLocalSearchParams<{ id: string }>()

@@ -8,8 +8,8 @@ import {
   ViewStyle,
 } from 'react-native'
 import { COLORS, getCategoryById, STATUS_COLORS, STATUS_LABELS, CONDITION_COLORS } from '@/lib/constants'
-import { CONDITION_LABELS } from '@troc/types'
-import type { Listing } from '@troc/types'
+import { CONDITION_LABELS } from '@/types'
+import type { Listing } from '@/types'
 import { Badge } from './Badge'
 
 interface ListingCardProps {

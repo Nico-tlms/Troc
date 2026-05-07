@@ -8,7 +8,7 @@ import { useRouter } from 'expo-router'
 import { useListingsStore } from '@/stores/listings'
 import { useAuthStore } from '@/stores/auth'
 import { COLORS, STATUS_LABELS, STATUS_COLORS } from '@/lib/constants'
-import type { Listing } from '@troc/types'
+import type { Listing } from '@/types'
 
 const STATUS_FILTERS = ['Tout', 'active', 'draft', 'matched', 'completed', 'archived'] as const
 

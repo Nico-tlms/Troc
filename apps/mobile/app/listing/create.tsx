@@ -11,7 +11,7 @@ import { CategoryPicker } from '@/components/CategoryPicker'
 import { ConditionPicker } from '@/components/ConditionPicker'
 import { ImagePickerComponent } from '@/components/ImagePickerComponent'
 import { COLORS, CATEGORIES } from '@/lib/constants'
-import type { ItemCondition } from '@troc/types'
+import type { ItemCondition } from '@/types'
 
 interface FormState {
   propose_title: string

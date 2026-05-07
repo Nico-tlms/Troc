@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { supabase } from '@/lib/supabase'
-import type { Match, ChainMatch } from '@troc/types'
+import type { Match, ChainMatch } from '@/types'
 
 interface MatchesState {
   matches: Match[]
