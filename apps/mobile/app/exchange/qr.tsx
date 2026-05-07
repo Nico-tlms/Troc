@@ -10,9 +10,7 @@ import { useAuthStore } from '@/stores/auth'
 import { COLORS } from '@/lib/constants'
 import type { Exchange } from '@troc/types'
 
-// expo-barcode-scanner provides QRCode rendering via BarCodeScanner
-// For display we show the raw QR code string + visual placeholder
-// A real production build would use react-native-qrcode-svg
+// QR display uses raw code string (react-native-qrcode-svg can be added for production)
 
 export default function QRExchangeScreen() {
   const { exchangeId, conversationId } = useLocalSearchParams<{
