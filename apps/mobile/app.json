@@ -17,10 +17,9 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.troc.app",
       "infoPlist": {
-        "NSCameraUsageDescription": "Troc a besoin d'accéder à votre caméra pour prendre des photos de vos articles.",
-        "NSPhotoLibraryUsageDescription": "Troc a besoin d'accéder à votre galerie pour ajouter des photos à vos annonces.",
-        "NSLocationWhenInUseUsageDescription": "Troc utilise votre position pour afficher les annonces proches de vous.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "Troc utilise votre position pour afficher les annonces proches de vous."
+        "NSCameraUsageDescription": "Troc a besoin de votre caméra pour prendre des photos.",
+        "NSPhotoLibraryUsageDescription": "Troc a besoin de votre galerie pour ajouter des photos.",
+        "NSLocationWhenInUseUsageDescription": "Troc utilise votre position pour les annonces proches."
       }
     },
     "android": {
@@ -35,7 +34,6 @@
         "WRITE_EXTERNAL_STORAGE",
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION",
-        "RECEIVE_BOOT_COMPLETED",
         "VIBRATE"
       ]
     },
@@ -48,13 +46,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Troc a besoin d'accéder à votre caméra."
-        }
-      ],
-      [
-        "expo-barcode-scanner",
-        {
-          "cameraPermission": "Troc a besoin d'accéder à votre caméra pour scanner les QR codes."
+          "cameraPermission": "Troc a besoin de votre caméra."
         }
       ],
       [
@@ -67,8 +59,7 @@
         "expo-notifications",
         {
           "icon": "./assets/notification-icon.png",
-          "color": "#6C63FF",
-          "sounds": []
+          "color": "#6C63FF"
         }
       ],
       [
